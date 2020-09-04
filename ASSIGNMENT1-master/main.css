@@ -1,0 +1,270 @@
+*{
+	margin:0;
+	padding: 0;
+	font-family: 'Girassol', cursive;
+}
+
+header{
+	background-color: white;
+	margin-bottom: 10px;
+	border-bottom: 4px solid #eb0000;
+}
+
+.sty_index{
+	background-image: url('pictures/wall.jpg');
+	background-size: cover;
+}
+
+.sty_cp{
+	background-image: url('pictures/tel.jpg');
+	background-size: cover;
+}
+
+.sty_ach{
+	background-image: url('pictures/acad1.jpg');
+	background-size: cover;
+}
+
+.sty_int{
+	background-image: url('pictures/back5.jpg');
+	background-size: cover;
+}
+
+.welcome{
+	background: linear-gradient(to right,#ffbaba,white);
+}
+
+.sty_start{
+	display: inline-block;
+	font-size: 40px;
+	margin: 80px 250px;
+	border: 4px solid black;
+	border-radius: 20px;
+	padding: 20px;
+}
+
+.start::first-letter{
+	font-size: 150%;
+}
+
+.arrow{
+	font-size: 40px;
+	margin: 80px 250px;
+	color: black;
+}
+
+.arrow:hover{
+	font-size: 150%;
+	color: #eb0000;
+}
+
+.sty_h{
+	margin:0 auto;
+}
+
+.sty_p{
+	color: #eb0000;
+	float:left;
+	margin: 10px;
+	font-size: 40px;
+	font-family: 'Girassol', cursive;
+}
+
+ul li{
+	display: inline-block;
+	float:right;
+}
+
+ul li a{
+	text-decoration: none;
+	margin:10px 20px;
+	line-height: 72px;
+	color: black;
+	font-size: 30px;
+	font-family: 'Girassol', cursive;
+}
+
+ul li a:hover{
+	color: #eb0000;
+}
+
+header::after{
+	content:" ";
+	clear:both;
+	display: block;
+	visibility: none;
+}
+
+.sty_art{ 
+    background-color: rgba(255,255,255,0.5);
+}
+
+.sty_img{
+	float:left;
+	border-radius: 50%;
+	margin: 20px 50px;
+}
+
+h1{
+	font-size:40px;
+	margin: 20px;
+	color: #eb0000;
+	padding-left: 500px;
+}
+
+h1::first-letter{
+	font-size: 150%;
+
+}
+
+.sty_intro{
+	font-size: 36px;
+	margin:40px;
+	color: black;
+	padding-bottom:80px;
+}
+
+
+.sty_ct{
+	background-color: rgba(255,255,255,0.5);
+	display: inline-block;
+        position: absolute;
+        left: 35%;
+        margin: 10px;
+        border-radius: 5px;
+}
+
+.sty_ali{
+	margin: 10px 20px;
+}
+
+.sty_fb, .sty_lin{
+	margin: 10px 20px;
+}
+
+.sty_wa{
+	margin: 10px 20px;
+	border-radius: 30px;
+}
+
+.sty_gh{
+	margin: 10px 20px;
+	border-radius: 50%;
+}
+
+.ach{
+	background-color: rgba(255,255,255,0.5);
+	display: inline-block;
+    position: absolute;
+    left: 50%;
+    margin: 10px;
+    font-size: 50px;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    padding: 20px;
+
+}
+
+.heading{
+	margin-left: 560px;
+	font-size: 48px;
+	color: white;
+}
+
+.bad, .music, .web, .sketch{
+	margin: 30px;
+	border-radius: 50%;
+}
+
+.st_bad{
+	display: inline-block;
+	font-size: 40px;
+	border-radius: 10%;
+	background-color: white;
+	animation: bad 1s 0s ease;
+	animation-fill-mode: forwards;
+}
+
+.st_music{
+	display: inline-block;
+	font-size: 40px;
+	border-radius: 10%;
+	background-color: white;
+	animation: music 3s 0s ease;
+	animation-fill-mode: forwards;
+}
+
+.st_web{
+	display: inline-block;
+	font-size: 40px;
+	border-radius: 10%;
+	background-color: white;
+	animation: web 5s 0s ease;
+	animation-fill-mode: forwards;
+}
+
+.st_sketch{
+	display: inline-block;
+	font-size: 40px;
+	border-radius: 10%;
+	background-color: white;
+	animation: sketch 6s 0s ease;
+	animation-fill-mode: forwards;
+}
+
+.sty_im{
+	position: absolute;
+    left: 34%;
+    margin: 10px;
+    transform-origin: 20px 20px;
+    animation: swing 4s 2s ease;
+    animation-fill-mode: forwards;
+    border-radius: 5px;
+}
+
+.sty_ani{
+	color:black;
+	border:2px solid rgba(255,255,255,1);
+	border-radius: 10%;
+	background-color: white;
+	display: inline-block;
+	font-size:40px;
+	padding: 4px;
+    animation-name: slide;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes bad{
+	from{ transform : translateX(-100px); }
+	to{ transform: translateX(70px); }
+}
+
+@keyframes music{
+	from{ transform : translateX(-300px); }
+	to{ transform: translateX(240px); }
+}
+
+@keyframes web{
+	from{ transform : translateX(-650px); }
+	to{ transform: translateX(400px); }
+}
+
+@keyframes sketch{
+	from{ transform : translateX(-1300px); }
+	to{ transform: translateX(500px); }
+}
+
+@keyframes slide{
+	from{ transform : translateX(-100px); }
+	to{ transform: translateX(550px); }
+}
+
+@keyframes swing{
+	0%{ transform: rotateZ(0deg); }
+	20%{ transform: rotateZ(105deg); }
+	40%{ transform: rotateZ(65deg); }
+	60%{ transform: rotateZ(90deg); }
+	80%{ transform: rotateZ(82deg); }
+	100%{ transform: rotateZ(85deg); }
+}

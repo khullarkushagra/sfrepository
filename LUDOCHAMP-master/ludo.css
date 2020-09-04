@@ -1,0 +1,274 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family:'Montserrat', sans-serif;
+	box-sizing: border-box;
+}
+
+html, body{
+	height: 100%;
+	width: 100%;
+}
+
+.container_p2{
+	text-align: center;
+	position: relative;
+}
+
+.sty_body{
+	background-color: #fff;
+}
+
+.sty_backimage{
+	position: absolute;
+	top: 25%;
+	width: 60%;
+	left: 20%;
+	opacity: 0.1;
+	z-index: -10;
+}
+
+#button1{
+	position: absolute;
+	left: 0%;
+	top: 65%;
+	padding: 0.5em 0.5em;
+	opacity: 0.8;
+	width: 5em;
+	background-color: rgba(242,0,0);
+	outline: none;
+	color: #fff;
+	font-weight: bold;
+	border:2px solid rgba(242,0,0);
+	font-size: 1.5rem;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+
+#button2{
+	position: absolute;
+	right: 0%;
+	top: 65%;
+	padding: 0.5em 0.5em;
+	width: 5em;
+	opacity: 0.8;
+	display: none;
+	background-color: rgba(242,0,0);
+	outline: none;
+	color: #fff;
+	font-weight: bold;
+	border:2px solid rgba(242,0,0);
+	font-size: 1.5rem;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+
+#die{
+	display: none;
+}
+
+#cont_p11{
+	position: absolute;
+	top: 28%;
+	left: 18%;
+	width: 8%;
+}
+
+#p11{
+	width: 100%;
+	display: none;
+	cursor: pointer;
+}
+
+#cont_p12{
+	position: absolute;
+	top: 45%;
+	left: 18%;
+    width: 8%;
+}
+
+#p12{
+	width: 100%;
+	display: none;
+	cursor: pointer;
+}
+
+#cont_p21{
+	position: absolute;
+	top: 28%;
+	left: 75%;
+	width: 8%;
+}
+
+#p21{
+	width: 100%;
+	display: none;
+	cursor: pointer;
+}
+
+#cont_p22{
+	position: absolute;
+	top: 45%;
+	left: 75%;
+	width: 8%;
+}
+
+#p22{
+	width: 100%;
+	display: none;
+	cursor: pointer;
+}
+
+#canvas{
+	background-color: rgba(255, 210, 207,0.4);
+	z-index: 10;
+	margin-top: 2%;
+	max-width: 80%;
+}
+
+.container{
+	height: 100%;
+	display: flex;
+	text-align: center;
+}
+
+.container2{
+	background-color: rgb(244, 200, 0);
+}
+
+.container1, .container2{
+	height: 100%;
+	width:50%;
+}
+
+.container1 img{
+	width: 60%;
+	position: relative;
+	top: 40%;
+}
+
+.container2 form{
+	position: relative;
+	top: 15%;
+	left: 20%;
+	background: #fff;
+	border-radius: 0.2em;
+	width: 60%;
+	padding: 2em;
+	opacity: 0.6;
+	z-index: 10;
+}
+
+@keyframes back_op{
+	from{opacity: 0.6;}
+	to{opacity: 1;}
+}
+
+@keyframes button_zoom{
+	from{width: 5em; padding: 0.5em 0.5em;}
+	to{width: 7em; padding: 0.5em 1.5em;}
+}
+
+.container2 form:hover{
+	animation-name: back_op;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+}
+
+#button1:hover{
+	animation-name: button_zoom;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+
+#button2:hover{
+	animation-name: button_zoom;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+
+.container2{
+	display: flex;
+	flex-direction: column;
+}
+
+.container2 img{
+	width: 100%;
+	margin-top: 2em;
+}
+
+input[type="text"]{
+	padding: 0.8em;
+	margin: 1em;
+	width: 80%;
+	border-radius: 0.5em;
+	outline: none;
+	border: 0.2em solid #b3b3b3;
+	letter-spacing: 0.8px;
+	font-size: 0.8rem;
+}
+
+input[type="submit"]{
+	padding: 0.5em 1em;
+	width: 50%;
+	background-color: #f20000;
+	outline: none;
+	color: #fff;
+	font-weight: bold;
+	border:2px solid #f20000;
+	font-size: 1rem;
+	letter-spacing: 1px;
+}
+
+form label{
+	font-weight: bold;
+	color: #616161;;
+	letter-spacing: 1px;
+}
+
+@keyframes input_text{
+	from{border-color:#b3b3b3;}
+	to{border-color:#616161;}
+}
+
+@keyframes inc_size{
+	from{width: 50%;font-size: 1rem;}
+	to{width: 80%;font-size: 1.2rem;}
+}
+
+input[type="text"]:hover{
+	animation-name: input_text;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+
+input[type="submit"]:hover{
+	animation-name: inc_size;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	cursor: pointer;
+}
+
+@media (max-width:1000px){
+	.container{
+		flex-direction: column;
+		overflow: scroll;
+		height: 200%;
+	}
+	.container1, .container2{
+		position: relative;
+		width: 100%;
+	}
+
+	.container2 img{
+		position: relative;
+		top: 25%;
+	}
+}
+
+
+
+
+
+
+
